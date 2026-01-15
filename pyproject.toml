@@ -1,0 +1,16 @@
+[project]
+name = "gnss-planner"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "geopandas>=1.1.1",
+    "plotly>=6.3.1",
+    "pytz>=2025.2",
+    "requests>=2.32.5",
+    "skyfield>=1.53",
+    "sqlalchemy>=2.0.44",
+    "streamlit>=1.51.0",
+    "streamlit-folium>=0.25.3",
+]
