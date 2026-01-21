@@ -1,7 +1,7 @@
 [project]
 name = "gnss-planner"
 version = "0.1.0"
-description = "Add your description here"
+description = "Plan your GNSS campains and ensure you will have satellite coverage when you collect data"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
