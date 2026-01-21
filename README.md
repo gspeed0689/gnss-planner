@@ -39,17 +39,47 @@ Further future updates:
 * DOP predictions
 * Ionospheric data integration perhaps from [here](https://services.swpc.noaa.gov/products/glotec/geojson_2d_urt/)
 
-## Using the library
+## Installation
 
-From the gnss-planner folder, call `streamlit run 00_🛰️_GNSS_Planner.py`
+Clone the repository locally:
+
+    git clone https://github.com/gspeed0689/gnss-planner.git
+
+Change directory inside, and either 
+
+    uv sync
+
+or
+
+    pip install -e .
+
+Activate your virtual environment.
+Change directory into `gnss-planner` and run
+
+    streamlit run 00_🛰️_GNSS_Planner.py
+
+## Usage
 
 On the first page, select your location and time settings. 
 
-On the Charts page, see how many satellites you will have over time, 
-the altitude of satellites over time, 
-and the path of the satellites in a skyplot. 
+![](./assets/settings_01.png)
 
-On the Map page, see the satellites and their paths around the world. 
+Set the location by navigating to your area of interest where you will carry out fieldwork, and then press the `Update location` button.
+![](./assets/settings_02.png)
+
+On the Charts page you will find 3 graphs
+
+The number of satellites visible over time
+![Histogram chart of the number of satellites over time](./assets/graph_01.png)
+
+The altitude of satellites over time
+![Line graphs showing the altitude of the satellite over time](./assets/graph_02.png)
+
+The location of the satellite in the sky over time. 
+![The location in the sky over your chosen location over time](./assets/graph_03.png)
+
+On the Map page, see the satellites and their paths around the world. Avoid this page, it isn't working correctly
+![Map showing the satellite over the selected time period.](./assets/map_01.png)
 
 ## Special Callouts
 
