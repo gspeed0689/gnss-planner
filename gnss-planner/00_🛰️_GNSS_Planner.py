@@ -9,7 +9,9 @@ for k, v in st.session_state.items():
     if k.startswith("_"):
         st.session_state[k[1:]] = v
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",
+                   page_title="GNSS Planner", 
+                   page_icon="🛰️")
 
 st.title("GNSS Planner")
 
